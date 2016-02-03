@@ -13,6 +13,11 @@ return [
 	'prefix'                  => 'admin',
 
 	/*
+	 * Middleware to use in login/logout admin routes
+	 */
+	'web_middleware'              => ['web'],
+
+	/*
 	 * Middleware to use in admin routes
 	 */
 	'middleware'              => ['admin.auth'],

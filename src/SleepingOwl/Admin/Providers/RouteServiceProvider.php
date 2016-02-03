@@ -16,6 +16,7 @@ class RouteServiceProvider extends ServiceProvider
 		Route::group([
 			'prefix'    => config('admin.prefix'),
 			'namespace' => 'SleepingOwl\Admin\Http\Controllers',
+			'middleware' => config('admin.web_middleware'),
 		], function ()
 		{
 			Route::group([
